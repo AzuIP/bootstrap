@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugar - HUNTRIX</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #1a0033 0%, #2d0a4e 50%, #4a0e7a 100%);
+            color: white;
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important;
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+        }
+        
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ff6ec7 !important;
+            text-shadow: 0 0 20px #ff6ec7;
+        }
+        
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 600;
+            margin: 0 1rem;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #ff6ec7 !important;
+            text-shadow: 0 0 10px #ff6ec7;
+        }
+        
+        /* Game Container */
+        .game-section {
+            padding: 2rem 0;
+            min-height: calc(100vh - 80px);
+        }
+        
+        .game-container {
+            background: rgba(0, 0, 0, 0.5);
+            border: 3px solid #8b5cf6;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 0 40px rgba(139, 92, 246, 0.5);
+            margin-bottom: 2rem;
+        }
+        
+        .game-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ff6ec7;
+            text-shadow: 0 0 20px #ff6ec7;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            background: black;
+            display: block;
+        }
+        
+        .instructions {
+            background: rgba(139, 92, 246, 0.1);
+            border: 2px solid #8b5cf6;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .instructions h3 {
+            color: #c084fc;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .instructions p {
+            color: #e9d5ff;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .instructions strong {
+            color: #ff6ec7;
+        }
+        
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin: 0;
+            color: #c084fc;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .game-frame {
+                height: 400px;
+            }
+            
+            .game-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🎵 HUNTRIX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre el Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="jugar.html">Jugar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Game Section -->
+    <section class="game-section">
+        <div class="container">
+            <h1 class="game-title">🎮 HUNTRIX - La Aventura</h1>
+            
+            <div class="game-container">
+                <!-- IMPORTANTE: La ruta apunta a ../juego/index.html -->
+                <iframe class="game-frame" src="../juego/index.html" title="HUNTRIX Game"></iframe>
+            </div>
+            
+            <div class="instructions">
+                <h3>📝 Instrucciones</h3>
+                <p>
+                    Sumergite en la aventura de <strong>HUNTRIX</strong>. Tomá decisiones que afectarán el destino de Rumi, 
+                    Mira y Zoey mientras enfrentan fuerzas demoníacas. Cada elección cuenta y puede llevarte 
+                    a uno de los <strong>tres finales diferentes</strong>.
+                </p>
+                <p>
+                    <strong>Controles:</strong> Usá el mouse para hacer clic en las opciones y avanzar en la historia.
+                </p>
+                <p>
+                    <strong>Atajos de teclado:</strong>
+                </p>
+                <ul style="color: #e9d5ff;">
+                    <li><strong>R</strong> = Reiniciar la historia</li>
+                    <li><strong>M</strong> = Mutear/Desmutear música</li>
+                    <li><strong>1, 2, 3</strong> = Saltar directamente a los finales (para testear)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HUNTRIX | Trabajo Final PMIW | Azul Ibáñez Presa (Legajo 122734/1)</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

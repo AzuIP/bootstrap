@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el Proyecto - HUNTRIX</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #1a0033 0%, #2d0a4e 50%, #4a0e7a 100%);
+            color: white;
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important;
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+        }
+        
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ff6ec7 !important;
+            text-shadow: 0 0 20px #ff6ec7;
+        }
+        
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 600;
+            margin: 0 1rem;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #ff6ec7 !important;
+            text-shadow: 0 0 10px #ff6ec7;
+        }
+        
+        /* Content */
+        .content-section {
+            padding: 3rem 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ff6ec7;
+            text-shadow: 0 0 20px #ff6ec7;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .card-custom {
+            background: rgba(139, 92, 246, 0.1);
+            border: 2px solid #8b5cf6;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+        }
+        
+        .card-custom h3 {
+            color: #c084fc;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .card-custom p {
+            line-height: 1.8;
+            color: #e9d5ff;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+        
+        .highlight {
+    background: linear-gradient(135deg, #ff6ec7 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+        .tech-badge {
+            display: inline-block;
+            background: rgba(255, 110, 199, 0.2);
+            border: 1px solid #ff6ec7;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.3rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin: 0;
+            color: #c084fc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🎵 HUNTRIX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre.html">Sobre el Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jugar.html">Jugar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container content-section">
+        <h1 class="section-title">📖 Sobre el Proyecto</h1>
+        
+        <!-- Historia del Juego -->
+        <div class="card-custom">
+            <h3>🎭 La Historia</h3>
+            <p>
+                <span class="highlight">HUNTRIX</span> narra la historia de Rumi, Mira y Zoey, un grupo de idols K-pop 
+                que llevan una doble vida como cazadoras de demonios. Durante el ensayo para su próximo concierto, 
+                una energía oscura invade el lugar y desata una serie de eventos que pondrán a prueba no solo sus 
+                habilidades de combate, sino también su amistad y determinación.
+            </p>
+            <p>
+                El juego presenta <span class="highlight">tres finales diferentes</span> basados en las decisiones 
+                del jugador: desde la victoria épica donde el grupo derrota a Gwi-Ma, hasta finales más oscuros 
+                donde la corrupción demoníaca prevalece.
+            </p>
+        </div>
+
+        <!-- Proceso de Producción -->
+        <div class="card-custom">
+            <h3>🎨 Proceso de Producción</h3>
+            <p>
+                El desarrollo de HUNTRIX fue realizado utilizando <span class="highlight">p5.js</span>, 
+                una biblioteca de JavaScript para programación creativa. El proyecto se dividió en tres etapas:
+            </p>
+            <ul style="color: #e9d5ff; line-height: 2;">
+                <li><strong>Etapa 1:</strong> Aventura gráfica interactiva con sistema de decisiones ramificadas</li>
+                <li><strong>Etapa 2:</strong> Minijuego de acción tipo endless runner integrado a la narrativa</li>
+                <li><strong>Etapa 3:</strong> Sitio web de presentación con framework Bootstrap</li>
+            </ul>
+            
+            <h4 style="color: #c084fc; margin-top: 2rem;">Tecnologías Utilizadas:</h4>
+            <div>
+                <span class="tech-badge">p5.js</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">Bootstrap 5</span>
+                <span class="tech-badge">Inteligencia Artificial (generación de imágenes)</span>
+            </div>
+            
+            <p style="margin-top: 2rem;">
+                Todo el arte visual fue generado con herramientas de IA y posteriormente editado para mantener 
+                coherencia estética. La banda sonora incluye temas de K-pop y música ambiental que refuerzan 
+                la atmósfera de cada escena.
+            </p>
+        </div>
+
+        <!-- Experiencia Personal -->
+        <div class="card-custom">
+            <h3>💜 Mi Experiencia Personal</h3>
+            <p>
+                Durante este año, el proceso de realizar este trabajo fue muy intenso y significativo para mí. 
+                Cuando comenzó el TP Final Parte 1, me asignaron a trabajar con una compañera. Al principio todo 
+                parecía ir encaminado: compartíamos ideas, coincidimos rápido en hacer un juego/novela gráfica 
+                inspirada en guerreras K-pop, armamos nombres, caminos narrativos, finales alternativos, y hasta 
+                generamos la primera estructura.
+            </p>
+            
+            <p class="quote">
+                "Yo me comprometí a encargarme del arte: las imágenes generadas con IA, las ediciones y la parte 
+                visual. Sin embargo, con el correr del tiempo, empezaron las dificultades..."
+            </p>
+            
+            <p>
+                El día de la entrega, cuando yo estaba enviando las imágenes, recibí un mensaje diciendo que no 
+                iba a poner mi nombre en el proyecto. Ese mensaje me cayó muy fuerte. Me generó una crisis de 
+                ansiedad enorme, porque todo el año venía arrastrando experiencias grupales muy difíciles.
+            </p>
+            
+            <p>
+                Tuve que frenar, respirar, y comunicarme con los profesores para explicar la situación. Fue un 
+                momento muy doloroso porque sentí que todo mi esfuerzo no estaba siendo visto ni valorado.
+            </p>
+            
+            <p>
+                Hablé con el profesor Matías, que me dio una nueva oportunidad y me alentó a seguir. A pesar de 
+                todas las dificultades y de sentirme muchas veces desbordada, decidí terminar el proyecto sola, 
+                desde cero y poniendo todo lo que pude.
+            </p>
+            
+            <p style="margin-top: 2rem; font-weight: 700; color: #ff6ec7;">
+                Este trabajo terminó siendo más que un ejercicio académico. Fue un proceso emocional fuerte, 
+                donde aprendí a organizarme, a responder bajo presión, a seguir adelante aunque las cosas no 
+                salieran como esperaba, y sobre todo a confiar en que soy capaz, incluso cuando el camino se 
+                vuelve cuesta arriba.
+            </p>
+            
+            <p style="text-align: center; font-size: 1.2rem; margin-top: 2rem;">
+                ✨ <em>No fue fácil, pero llegué. Y este proyecto, más que un final, es una muestra del 
+                esfuerzo real que hice durante todo el año.</em> ✨
+            </p>
+        </div>
+
+        <!-- Créditos -->
+        <div class="card-custom">
+            <h3>👤 Créditos</h3>
+            <p>
+                <strong>Autora:</strong> Azul Ibáñez Presa<br>
+                <strong>Legajo:</strong> 122734/1<br>
+                <strong>Materia:</strong> PMIW<br>
+                <strong>Profesor:</strong> Matías Jauregui Lorda<br>
+                <strong>Año:</strong> 2025<br>
+                <strong>Institución:</strong> Facultad de Artes (UNLP)
+            </p>
+            <p style="margin-top: 1.5rem;">
+                <strong>Inspiración:</strong> Basado en la película "K-Pop Demon Hunters" de Netflix
+            </p>
+        </div>
+
+        <!-- Botón para jugar -->
+        <div class="text-center" style="margin: 3rem 0;">
+            <a href="jugar.html" class="btn btn-lg" style="background: linear-gradient(135deg, #ff6ec7 0%, #8b5cf6 100%); border: none; padding: 1rem 3rem; font-size: 1.2rem; font-weight: 700; border-radius: 50px; color: white;">
+                🎮 Jugar Ahora
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HUNTRIX | Trabajo Final PMIW | Azul Ibáñez Presa (Legajo 122734/1)</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
